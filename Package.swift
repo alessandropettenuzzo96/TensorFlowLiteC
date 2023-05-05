@@ -11,14 +11,16 @@ let package = Package(
                 "TensorFlowLiteC",
                 "TensorFlowLiteCCoreML",
                 "TensorFlowLiteCMetal",
+                "TensorFlowLiteSelectTfOps",
                 "Link",
             ]
         ),
     ],
     targets: [
-        .binaryTarget(name: "TensorFlowLiteC", url: "https://github.com/kewlbear/TensorFlowLiteC/releases/download/0.0.20230504/TensorFlowLiteC.xcframework.zip", checksum: "01d58ca163e3af28e0f895af987cc9f7bc4c6044c51fda74cc3caf3d8886cbbd"),
-        .binaryTarget(name: "TensorFlowLiteCCoreML", url: "https://github.com/kewlbear/TensorFlowLiteC/releases/download/0.0.20230504/TensorFlowLiteCCoreML.xcframework.zip", checksum: "41d345116af9cb6c22488134f482c4e1acab95bc0548c94c35c8d5b016bce719"),
-        .binaryTarget(name: "TensorFlowLiteCMetal", url: "https://github.com/kewlbear/TensorFlowLiteC/releases/download/0.0.20230504/TensorFlowLiteCMetal.xcframework.zip", checksum: "e858b4e33c68cff0b58cc5ba26ff56e32f23989dfb51792a020acd7c845466e7"),
+        .binaryTarget(name: "TensorFlowLiteC", url: "https://github.com/alessandropettenuzzo96/TensorFlowLiteC/releases/download/v0.0.1/TensorFlowLiteC.xcframework.zip", checksum: "0ffa228ce8727640e1720ba8cb7142571fa21752cc204ae8fc433f4dda6ff906"),
+        .binaryTarget(name: "TensorFlowLiteCCoreML", url: "https://github.com/alessandropettenuzzo96/TensorFlowLiteC/releases/download/v0.0.1/TensorFlowLiteCCoreML.xcframework.zip", checksum: "14ef2f3112000271d8869759a184afd583d5e43fca7d01aafce4bc8a6587cb52"),
+        .binaryTarget(name: "TensorFlowLiteCMetal", url: "https://github.com/alessandropettenuzzo96/TensorFlowLiteC/releases/download/v0.0.1/TensorFlowLiteCMetal.xcframework.zip", checksum: "11720d1841c170f6ab4eb33ea327268696fccc8a1d68c1f0e9a2456a013a87af"),
+        .binaryTarget(name: "TensorFlowLiteSelectTfOps", url: "https://github.com/alessandropettenuzzo96/TensorFlowLiteC/releases/download/v0.0.1/TensorFlowLiteSelectTfOps.xcframework.zip", checksum: "277232e0b97331ca0fb74f1ab7c8f029abba4e02d7452a7efa4f5e2e17ba71b8"),
         .target(name: "Link",
                 linkerSettings: [.linkedLibrary("c++")]),
     ]
